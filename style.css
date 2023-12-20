@@ -391,7 +391,6 @@ header .container:before {
 }
 
 .competency h2 {
-    color: black;
     margin: 0 0 20px 0;
 }
 
@@ -446,6 +445,64 @@ header .container:before {
 
     .competency-pic {
         margin-bottom: 30px;
+    }
+}
+
+.support h2 {
+    margin-bottom: 20px;
+    margin-top: 22px;
+}
+
+.support-block {
+    background: white;
+    border-radius: 5px;
+    box-shadow: 15px 15px 30px rgba(6, 14, 45, .075);
+    height: 100%;
+    position: relative;
+    padding: 25px 25px 45px 0;
+    margin: 0 -12px 10px -12px;
+    min-height: 220px;
+    z-index: 4;
+}
+
+.support-block .text {
+    position: relative;
+    z-index: 5;
+}
+
+.support-item {
+    margin-bottom: 5px;
+}
+
+.support-counter {
+    font-weight: bold;
+    font-size: 12px;
+    color: #788ab2;
+    margin-bottom: 20px;
+}
+
+.support-title {
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
+    line-height: 1.2;
+}
+
+.icon-support {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+@media screen and (min-width: 768px) {
+    .support h2 {
+        margin-bottom: 55px;
+    }
+
+    .support-block {
+        min-height: 292px;
     }
 }
 
