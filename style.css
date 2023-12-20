@@ -189,7 +189,7 @@ nav .dropdown-item:focus {
 
     nav .dropdown-item:hover,
     nav .dropdown-item:focus {
-        color: #fff;
+        color: white;
         background-color: #f14d34;
     }
 
@@ -199,7 +199,7 @@ nav .dropdown-item:focus {
 
     .navbar li.navigation-item a.nav-link:hover,
     .navbar li.navigation-item a.nav-link:focus {
-        color: #fff;
+        color: white;
     }
 }
 
