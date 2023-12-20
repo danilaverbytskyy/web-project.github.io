@@ -284,8 +284,7 @@ header .container:before {
     border-radius: 5px;
     letter-spacing: 0.06em;
     transition: background 300ms;
-    margin: 0 auto;
-    margin-bottom: 55px;
+    margin: 0 auto 55px;
 }
 
 .rate-button:hover {
@@ -356,15 +355,6 @@ header .container:before {
         background-position: left top;
     }
 
-    .sub-title {
-        text-align: left;
-        font-size: 18px;
-    }
-
-    .achievements-place {
-        margin-bottom: 96px;
-    }
-
     h1 {
         font-weight: bold;
         font-size: 52px;
@@ -384,6 +374,78 @@ header .container:before {
     .rate-button {
         margin-left: 0;
         margin-bottom: 155px;
+    }
+
+    .sub-title {
+        text-align: left;
+        font-size: 18px;
+    }
+
+    .achievements-place {
+        margin-bottom: 96px;
+    }
+}
+
+.competency {
+    margin: 50px 0 0 0;
+}
+
+.competency h2 {
+    color: black;
+    margin: 0 0 20px 0;
+}
+
+.competency-block .competency-text {
+    font-size: 14px;
+    width: 200px;
+    margin: auto;
+}
+
+.competency-text, .competencies-top-text {
+    color: #404c65;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.competencies-top-text {
+    margin-bottom: 55px;
+}
+
+.competency-pic {
+    position: relative;
+    display: inline-block;
+    padding: 0;
+    margin: 0 0 15px 50px;
+}
+
+@media screen and (min-width: 1081px) {
+    .competency-pic {
+        margin-left: 0;
+    }
+}
+
+.competency-pic:before {
+    background: url(img/iconspec.svg) no-repeat center;
+    background-size: contain;
+    content: "";
+    display: block;
+    width: 120px;
+    height: 70px;
+    position: absolute;
+    left: -50px;
+    bottom: -5px;
+}
+
+@media screen and (min-width: 768px) {
+    .competency-block .competency-text {
+        font-size: 16px;
+        width: auto;
+        max-width: none;
+        margin: 0;
+    }
+
+    .competency-pic {
+        margin-bottom: 30px;
     }
 }
 
