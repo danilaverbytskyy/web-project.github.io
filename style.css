@@ -50,7 +50,7 @@ h3 {
 .collapse {
     border-bottom: solid 1px white;
     overflow-y: auto;
-    max-height: calc(100vh - 49px);
+    max-height: calc(100vh - 50px);
 }
 
 .navbar-nav {
@@ -288,7 +288,7 @@ header .container:before {
 }
 
 .rate-button:hover {
-    color: #fff;
+    color: white;
     text-decoration: none;
     background: #f14d34;
 }
