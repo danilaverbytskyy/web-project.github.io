@@ -739,10 +739,10 @@ header .container:before {
     .rates li {
         font-size: 16px;
     }
+
     .rate-block {
          padding: 70px 20px 60px ;
      }
-
 
     .rate-column:hover .rate-block {
         transform: scale(1.1);
@@ -750,6 +750,62 @@ header .container:before {
 
     .main-rate .rate-block {
         transform: scale(1.1);
+    }
+}
+
+.our-devs {
+    padding-top: 50px;
+}
+
+.our-devs h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.our-devs .quick-tasks-title {
+    margin-bottom: 55px;
+}
+
+.our-devs-text {
+    font-weight: 500;
+    font-size: 16px;
+    color: #404c65;
+}
+
+.competency-unit .our-devs-text {
+    font-size: 14px;
+    width: 200px;
+    max-width: 100%;
+    margin: auto;
+}
+
+.our-devs-title {
+    text-align: center;
+    margin: 0 auto;
+    color: #0d0a69;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+    .competency-unit .our-devs-text {
+        font-size: 16px;
+        width: auto;
+        max-width: none;
+        margin: 0;
+    }
+
+    .our-devs {
+        padding-top: 100px;
+    }
+
+    .our-devs h2 {
+        font-size: 42px;
+    }
+
+    .our-devs-title {
+        margin: 0 0;
+        text-align: left;
     }
 }
 
