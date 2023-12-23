@@ -814,8 +814,7 @@ header .container:before {
 * ---------BORDERLINE-------------
 *
 */
-
-/* Work-with-us */
+/* work with us */
 
 .wwu h2 {
     text-align: center;
@@ -835,25 +834,36 @@ header .container:before {
     text-align: center;
 }
 
-.wwu-item {
+.wwu-slide {
     padding: 5px;
 }
 
-.wwu-item div {
+.wwu-slide div {
     border: 1px solid #e5e5e5;
     border-radius: 5px;
     padding: 10px;
 }
 
-.wwu-item img {
+.wwu-slide img {
     margin: auto;
     max-width: 100%;
     height: auto;
     width: 100%;
 }
 
-.wwu-slider-2 .wwu-item {
+#wwu-slider-2 .wwu-slide {
     transform: translateX(50%);
+}
+
+@media screen and (min-width: 768px) {
+    .wwu h2 {
+        font-size: 42px;
+        margin-bottom: 10px;
+    }
+
+    .wwu-title {
+        margin-bottom: 40px;
+    }
 }
 
 /* FAQ */
@@ -863,12 +873,12 @@ header .container:before {
     padding-bottom: 20px;
 }
 
-.faq-list h3 {
+.faq-num h3 {
     position: relative;
     cursor: pointer;
 }
 
-.faq-list p {
+.faq-num p {
     font-weight: 500;
     font-size: 16px;
     color: #4e5a73;
@@ -876,13 +886,13 @@ header .container:before {
     margin-top: 10px;
 }
 
-.faq-list div {
+.faq-num div {
     border: 3px solid transparent;
     padding: 10px 12px 10px 30px;
     transition: border-color .25s;
 }
 
-.faq-list div.active {
+.faq-num div.active {
     border-color: #f14e3b;
 }
 
@@ -907,5 +917,4 @@ header .container:before {
         padding-bottom: 80px;
     }
 }
-
 
