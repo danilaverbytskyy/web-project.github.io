@@ -567,12 +567,6 @@ header .container:before {
     max-width: 260px;
 }
 
-@media screen and (max-width: 768px) {
-    .achievement-block {
-        margin-left: 20%;
-    }
-}
-
 @media screen and (min-width: 768px) {
     .expert {
         padding-top: 230px;
