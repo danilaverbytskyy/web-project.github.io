@@ -11,54 +11,55 @@
     <link rel="stylesheet" href="assets/fonts/Lora-VariableFont_wght.ttf">
 
     <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div class="navbar-main container-md">
     <nav class="navbar navbar-expand-md">
-        <div class="collapse navbar-collapse">
-            <ul class="mr-auto navbar-nav ">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
                 <li class="navigation-item">
-                    <a class="nav-link" href="#">ПОДДЕРЖКА DRUPAL</a>
+                    <a class="nav-link" href="">ПОДДЕРЖКА DRUPAL</a>
                 </li>
                 <li class="navigation-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#">
+                    <a class="nav-link dropdown-toggle" href="">
                         АДМИНИСТРИРОВАНИЕ
                     </a>
                     <div class="dropdown-menu dropdown-menu-1">
-                        <a class="dropdown-item" href="#">МИГРАЦИЯ</a>
-                        <a class="dropdown-item" href="#">БЭКАПЫ</a>
-                        <a class="dropdown-item" href="#">АУДИТ БЕЗОПАСНОСТИ</a>
-                        <a class="dropdown-item" href="#">ОПТИМИЗАЦИЯ СКОРОСТИ</a>
-                        <a class="dropdown-item" href="#">ПЕРЕЕЗД НА HTTPS</a>
+                        <a class="dropdown-item" href="">МИГРАЦИЯ</a>
+                        <a class="dropdown-item" href="">БЭКАПЫ</a>
+                        <a class="dropdown-item" href="">АУДИТ БЕЗОПАСНОСТИ</a>
+                        <a class="dropdown-item" href="">ОПТИМИЗАЦИЯ СКОРОСТИ</a>
+                        <a class="dropdown-item" href="">ПЕРЕЕЗД НА HTTPS</a>
                     </div>
                 </li>
                 <li class="navigation-item">
-                    <a class="nav-link" href="#">ПРОДВИЖЕНИЕ</a>
+                    <a class="nav-link" href="">ПРОДВИЖЕНИЕ</a>
                 </li>
                 <li class="navigation-item">
-                    <a class="nav-link" href="#">РЕКЛАМА</a>
+                    <a class="nav-link" href="">РЕКЛАМА</a>
                 </li>
                 <li class="navigation-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#">О НАС</a>
+                    <a class="nav-link dropdown-toggle" href="">О НАС</a>
                     <div class="dropdown-menu dropdown-menu-2">
-                        <a class="dropdown-item" href="#">КОМАНДА</a>
-                        <a class="dropdown-item" href="#">DRUPALGIVE</a>
-                        <a class="dropdown-item" href="#">БЛОГ</a>
-                        <a class="dropdown-item" href="#">КУРСЫ DRUPAL</a>
+                        <a class="dropdown-item" href="">КОМАНДА</a>
+                        <a class="dropdown-item" href="">DRUPALGIVE</a>
+                        <a class="dropdown-item" href="">БЛОГ</a>
+                        <a class="dropdown-item" href="">КУРСЫ DRUPAL</a>
                     </div>
                 </li>
                 <li class="navigation-item">
-                    <a class="nav-link" href="#">ПРОЕКТЫ</a>
+                    <a class="nav-link" href="">ПРОЕКТЫ</a>
                 </li>
                 <li class="navigation-item">
-                    <a class="nav-link" href="#">КОНТАКТЫ</a>
+                    <a class="nav-link" href="">КОНТАКТЫ</a>
                 </li>
             </ul>
         </div>
-        <a class="navbar-brand" href="#">
-            <img class="nav-icon" src="img/drupal-coder.svg"/>
+        <a class="navbar-brand" href="">
+            <img class="nav-icon" src="img/drupal-coder.svg" alt="navigation"/>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -441,7 +442,7 @@
                 <div class="col-12 col-md-4 competency-unit">
                     <div class="our-devs-text">
                         <div class="competency-pic">
-                            <img src="img/competency-20.svg" alt="Task-1" />
+                            <img src="img/competency-20.svg" alt="Task-1"/>
                         </div>
                         <div class="our-devs-title">от 1ч</div>
                         <div>Настройка события GA<br>в интернет-магазине</div>
@@ -450,7 +451,7 @@
                 <div class="col-12 col-md-4 competency-unit">
                     <div class="our-devs-text">
                         <div class="competency-pic">
-                            <img src="img/competency-21.svg" alt="Task-2" />
+                            <img src="img/competency-21.svg" alt="Task-2"/>
                         </div>
                         <div class="our-devs-title">от 20ч</div>
                         <div>Разработка мобильной<br>версии сайта</div>
@@ -459,7 +460,7 @@
                 <div class="col-12 col-md-4 competency-unit">
                     <div class="our-devs-text">
                         <div class="competency-pic">
-                            <img src="img/competency-22.svg" alt="Task-3" />
+                            <img src="img/competency-22.svg" alt="Task-3"/>
                         </div>
                         <div class="our-devs-title">от 8ч</div>
                         <div>Интеграция <br> модуля оплаты</div>
@@ -476,6 +477,7 @@
     </div>
     <div class="reviews-wrapper">
 
+
     </div>
     <div class="wwu">
         <h2>С нами работают</h2>
@@ -484,70 +486,65 @@
             чтобы
             наше сотрудничество было долгим
         </div>
-        <div class="wwu-slider-1 container-fluid slider">
-            <div class="wwu-item">
-                <div><img src="img/ciel.png" alt="Ciel"/></div>
+        <div class="wwu-slider-1" id="wwu-slider-1" style="width: 100%">
+            <div class="wwu-slide">
+                <div><img src="./img/ciel.png" alt="Ciel"/></div>
             </div>
-            <div class="wwu-item">
+            <div class="wwu-slide">
                 <div><img src="./img/kubsu.png" alt="Kubsu"/></div>
             </div>
-            <div class="wwu-item">
+            <div class="wwu-slide">
                 <div><img src="./img/rosatom.png" alt="Росатом"/></div>
             </div>
-            <div class="wwu-item">
-                <div><img src="img/serebro.png" alt="Serebro.Ag"/></div>
+            <div class="wwu-slide">
+                <div><img src="./img/serebro.png" alt="Serebro.Ag"/></div>
             </div>
-            <div class="wwu-item">
-                <div><img src="img/ciel.png" alt="Ciel"/></div>
+            <div class="wwu-slide">
+                <div><img src="./img/ciel.png" alt="Ciel"/></div>
             </div>
-            <div class="wwu-item">
+            <div class="wwu-slide">
                 <div><img src="./img/kubsu.png" alt="Kubsu"/></div>
             </div>
-            <div class="wwu-item">
+            <div class="wwu-slide">
                 <div><img src="./img/rosatom.png" alt="Росатом"/></div>
             </div>
-            <div class="wwu-item">
-                <div><img src="img/serebro.png" alt="Serebro.Ag"/></div>
+            <div class="wwu-slide">
+                <div><img src="./img/serebro.png" alt="Serebro.Ag"/></div>
             </div>
         </div>
-        <div class="wwu-slider-2 container-fluid">
-            <div class="wwu-item">
+        <div class="wwu-slider-2" id="wwu-slider-2" style="width: 100%">
+            <div class="wwu-slide">
                 <div><img src="./img/nashagazeta_ch.png" alt="Наша газета"/></div>
             </div>
-            <div class="wwu-item">
+            <div class="wwu-slide">
                 <div><img src="./img/cableman_ru.png" alt="Кабельщик"/></div>
             </div>
-            <div class="wwu-item">
-                <div><img src="img/estee.png" alt="Estee"/></div>
+            <div class="wwu-slide">
+                <div><img src="./img/estee.png" alt="Estee"/></div>
             </div>
-            <div class="wwu-item">
+            <div class="wwu-slide">
                 <div><img src="./img/lpcma_rus_v4.jpg" alt="Лаборатория"/></div>
             </div>
-            <div class="wwu-item">
+            <div class="wwu-slide">
                 <div><img src="./img/nashagazeta_ch.png" alt="Наша газета"/></div>
             </div>
-            <div class="wwu-item">
+            <div class="wwu-slide">
                 <div><img src="./img/cableman_ru.png" alt="Кабельщик"/></div>
             </div>
-            <div class="wwu-item">
-                <div><img src="img/estee.png" alt="Estee"/></div>
+            <div class="wwu-slide">
+                <div><img src="./img/estee.png" alt="Estee"/></div>
             </div>
-            <div class="wwu-item">
+            <div class="wwu-slide">
                 <div><img src="./img/lpcma_rus_v4.jpg" alt="Лаборатория"/></div>
             </div>
         </div>
     </div>
-
-
-    <!-- FAQ -->
-
-    <div class="faq container">
+    <div class="container faq">
         <h2>FAQ</h2>
-        <div class="faq-list">
+        <div class="faq-num">
             <div>
                 <h3>
-                    <div class="faq-item">1.</div>
-                    Кто непосредственно занимается поддержкой?
+                    <span class="faq-item">1.</span>Кто непосредственно занимается поддержкой?
                 </h3>
                 <p>Сайты поддерживают штатные сотрудники ООО &#171; Инитлаб &#187;, г.Краснодар, прошедшие специальное
                     обучение и имеющие опыт работы с Друпал от 4 до 15 лет:
@@ -556,8 +553,7 @@
             </div>
             <div>
                 <h3>
-                    <div class="faq-item">2.</div>
-                    Как организована работа поддержки?
+                    <span class="faq-item">2.</span>Как организована работа поддержки?
                 </h3>
                 <p>Сайты поддерживают штатные сотрудники ООО &#171; Инитлаб &#187;, г.Краснодар, прошедшие специальное
                     обучение и имеющие опыт работы с Друпал от 4 до 15 лет:
@@ -566,8 +562,7 @@
             </div>
             <div>
                 <h3>
-                    <div class="faq-item">3.</div>
-                    Что происходит, когда отработаны все предоплаченные часы за месяц?
+                    <span class="faq-item">3.</span>Что происходит, когда отработаны все предоплаченные часы за месяц?
                 </h3>
                 <p>Сайты поддерживают штатные сотрудники ООО &#171; Инитлаб &#187;, г.Краснодар, прошедшие специальное
                     обучение и имеющие опыт работы с Друпал от 4 до 15 лет:
@@ -576,8 +571,8 @@
             </div>
             <div>
                 <h3>
-                    <div class="faq-item">4.</div>
-                    Что происходит, когда не отработаны все предоплаченные часы за месяц?
+                    <span class="faq-item">4.</span>Что происходит, когда не отработаны все предоплаченные часы за
+                    месяц?
                 </h3>
                 <p>Сайты поддерживают штатные сотрудники ООО &#171; Инитлаб &#187;, г.Краснодар, прошедшие специальное
                     обучение и имеющие опыт работы с Друпал от 4 до 15 лет:
@@ -586,8 +581,8 @@
             </div>
             <div>
                 <h3>
-                    <div class="faq-item">5.</div>
-                    Как происходит оценка и согласование планируемого времени на выполнение
+                    <span class="faq-item">5.</span>Как происходит оценка и согласование планируемого времени на
+                    выполнение
                     заявок?
                 </h3>
                 <p>Сайты поддерживают штатные сотрудники ООО &#171; Инитлаб &#187;, г.Краснодар, прошедшие специальное
@@ -597,8 +592,7 @@
             </div>
             <div>
                 <h3>
-                    <div class="faq-item">6.</div>
-                    Сколько программистов выделяется за проект?
+                    <span class="faq-item">6.</span>Сколько программистов выделяется за проект?
                 </h3>
                 <p>Сайты поддерживают штатные сотрудники ООО &#171; Инитлаб &#187;, г.Краснодар, прошедшие специальное
                     обучение и имеющие опыт работы с Друпал от 4 до 15 лет:
@@ -607,8 +601,7 @@
             </div>
             <div>
                 <h3>
-                    <div class="faq-item">7.</div>
-                    Как подать заявку на внесение изменений на сайте?
+                    <span class="faq-item">7.</span>Как подать заявку на внесение изменений на сайте?
                 </h3>
                 <p>Сайты поддерживают штатные сотрудники ООО &#171; Инитлаб &#187;, г.Краснодар, прошедшие специальное
                     обучение и имеющие опыт работы с Друпал от 4 до 15 лет:
@@ -617,8 +610,7 @@
             </div>
             <div>
                 <h3>
-                    <div class="faq-item">8.</div>
-                    Как подать заявку на добавление пользователя, изменение настроек
+                    <span class="faq-item">8.</span>Как подать заявку на добавление пользователя, изменение настроек
                     веб-сервиса и других задач по администрированию?
                 </h3>
                 <p>Сайты поддерживают штатные сотрудники ООО &#171; Инитлаб &#187;, г.Краснодар, прошедшие специальное
@@ -628,8 +620,7 @@
             </div>
             <div>
                 <h3>
-                    <div class="faq-item">9.</div>
-                    В течении какого времени начинается работа по заявке?
+                    <span class="faq-item">9.</span>В течении какого времени начинается работа по заявке?
                 </h3>
                 <p>Сайты поддерживают штатные сотрудники ООО &#171; Инитлаб &#187;, г.Краснодар, прошедшие специальное
                     обучение и имеющие опыт работы с Друпал от 4 до 15 лет:
@@ -638,8 +629,7 @@
             </div>
             <div>
                 <h3>
-                    <div class="faq-item">10.</div>
-                    В какое время работает поддержка?
+                    <span class="faq-item">10.</span>В какое время работает поддержка?
                 </h3>
                 <p>Сайты поддерживают штатные сотрудники ООО &#171; Инитлаб &#187;, г.Краснодар, прошедшие специальное
                     обучение и имеющие опыт работы с Друпал от 4 до 15 лет:
@@ -648,8 +638,8 @@
             </div>
             <div>
                 <h3>
-                    <div class="faq-item">11.</div>
-                    Подходят ли услуги поддержки, если необходимо произвести обновление ядра
+                    <span class="faq-item">11.</span>Подходят ли услуги поддержки, если необходимо произвести обновление
+                    ядра
                     Drupal или модулей?
                 </h3>
                 <p>Сайты поддерживают штатные сотрудники ООО &#171; Инитлаб &#187;, г.Краснодар, прошедшие специальное
@@ -659,8 +649,7 @@
             </div>
             <div>
                 <h3>
-                    <div class="faq-item">12.</div>
-                    Можно ли пообщаться со специалистом голосом или в мессенджере?
+                    <span class="faq-item">12.</span>Можно ли пообщаться со специалистом голосом или в мессенджере?
                 </h3>
                 <p>Сайты поддерживают штатные сотрудники ООО &#171; Инитлаб &#187;, г.Краснодар, прошедшие специальное
                     обучение и имеющие опыт работы с Друпал от 4 до 15 лет:
@@ -668,17 +657,19 @@
                 </p>
             </div>
         </div>
-
     </div>
 
 
     <footer class="footer-block"></footer>
 
 </div>
+
 <!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="main.js"></script>
-
 </body>
 </html>
