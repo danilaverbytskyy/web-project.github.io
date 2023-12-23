@@ -29,22 +29,23 @@ h3 {
     font-size: 18px;
 }
 
-/* Navbar */
+/* nav */
 
 .navbar-main {
     position: fixed;
-    background-color: black;
     bottom: 0;
     left: 0;
     right: 0;
     top: auto;
+    background-color: black;
     z-index: 1000;
 }
 
 .navbar {
+    padding: 2px 0 6px;
+    margin-left: -15px;
+    margin-right: -15px;
     flex-wrap: wrap;
-    padding: 2px 0 6px 0;
-    margin: 0 -15px 0 -15px;
 }
 
 .collapse {
@@ -92,19 +93,31 @@ nav .dropdown-item {
     transition: all 400ms;
     padding: 8px 20px 8px 35px;
     font-weight: 500;
-    border-bottom: 1px solid #3c3737;
+    border-bottom: 1px solid #312a2a;
     line-height: 22px;
+}
+
+nav .dropdown-item:hover,
+nav .dropdown-item:focus {
+    color: #f14e3b;
+    background-color: inherit;
 }
 
 .navbar a {
     text-decoration: none;
 }
 
+.navbar-toggler-icon {
+    background: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(136,136,136,1.00)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") no-repeat;
+}
+
+.navbar-toggler {
+    margin-top: 1px;
+}
+
 .navbar li.navigation-item a.nav-link:hover,
-.navbar li.navigation-item a.nav-link:focus,
-nav .dropdown-item:hover,
-nav .dropdown-item:focus {
-    color: #f14d45;
+.navbar li.navigation-item a.nav-link:focus {
+    color: #f14e3b;
     background-color: inherit;
 }
 
@@ -153,7 +166,7 @@ nav .dropdown-item:focus {
 
     .navbar li:hover {
         border-top: 8px solid transparent;
-        border-bottom: 3px solid #f14d34;
+        border-bottom: 3px solid #f14e3b;
     }
 
     .collapse {
@@ -168,7 +181,7 @@ nav .dropdown-item:focus {
         overflow: hidden;
         transition: all 0.5s;
         position: unset;
-        background-color: #f14d34;
+        background-color: #f14e3b;
         padding: unset;
     }
 
@@ -190,7 +203,7 @@ nav .dropdown-item:focus {
     nav .dropdown-item:hover,
     nav .dropdown-item:focus {
         color: white;
-        background-color: #f14d34;
+        background-color: #d13018;
     }
 
     nav .navigation-item.dropdown:hover .dropdown-menu {
@@ -274,13 +287,13 @@ header .container:before {
     font-weight: 500;
     font-size: 12px;
     line-height: 12px;
-    color: #fff;
+    color: white;
     text-decoration: none;
     padding: 22px 20px;
     width: 220px;
     max-width: 100%;
     text-align: center;
-    border: 2px solid #f14d34;
+    border: 2px solid #f14e3b;
     border-radius: 5px;
     letter-spacing: 0.06em;
     transition: background 300ms;
@@ -290,7 +303,7 @@ header .container:before {
 .rate-button:hover {
     color: white;
     text-decoration: none;
-    background: #f14d34;
+    background: #f14e3b;
 }
 
 .achievements-place {
@@ -308,7 +321,7 @@ header .container:before {
 }
 
 .achievements {
-    border-left: 3px solid #f14d34;
+    border-left: 3px solid #f14e3b;
     padding-left: 15px;
     padding-top: 5px;
     padding-bottom: 10px;
@@ -330,7 +343,7 @@ header .container:before {
 }
 
 .achievements a {
-    color: #f14d34;
+    color: #f14e3b;
 }
 
 .achievement-block {
@@ -594,8 +607,7 @@ header .container:before {
 }
 
 .rates {
-    background-color: white;
-    background: url("img/D-background-opacity.svg") no-repeat right top;
+    background: white url("img/D-background-opacity.svg") no-repeat right top;
     background-size: cover;
     padding-bottom: 50px;
 }
@@ -657,7 +669,7 @@ header .container:before {
 }
 
 .rate-title {
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid white;
     margin-bottom: 50px;
     font-size: 22px;
     font-weight: bold;
@@ -741,8 +753,8 @@ header .container:before {
     }
 
     .rate-block {
-         padding: 70px 20px 60px ;
-     }
+        padding: 70px 20px 60px ;
+    }
 
     .rate-column:hover .rate-block {
         transform: scale(1.1);
@@ -917,4 +929,3 @@ header .container:before {
         padding-bottom: 80px;
     }
 }
-
