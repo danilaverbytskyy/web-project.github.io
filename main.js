@@ -118,7 +118,7 @@ $(document).ready(function () {
         $.ajax({
             type: "POST",
             dataType: "json",
-            url: "https://formcarry.com/s/adu1AdDRs76",
+            url: "https://formcarry.com/s/DuS_CasfnL",
             data: data,
             success: function (response) {
                 if (response.status == "success") {
