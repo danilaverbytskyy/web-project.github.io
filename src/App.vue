@@ -1,14 +1,33 @@
 <template>
   <div id="app">
     <AppNav />
+    <AppComp />
+    <AppSupport />
+    <AppExpert />
+    <AppRates />
+    <AppOurDevs />
+
   </div>
 </template>
 
 <script>
 import AppNav from './components/AppNav.vue'
+import AppComp from './components/AppComp.vue'
+import AppSupport from './components/AppSupport.vue'
+import AppExpert from './components/AppExpert.vue'
+import AppRates from './components/AppRates.vue'
+import AppOurDevs from "@/components/AppOurDevs.vue"
+
 export default {
   components: {
-    AppNav
+
+    AppNav,
+    AppComp,
+    AppSupport,
+    AppExpert,
+    AppRates,
+    AppOurDevs,
+
   },
 };
 </script>
