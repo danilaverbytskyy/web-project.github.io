@@ -6,7 +6,12 @@
     <AppExpert />
     <AppRates />
     <AppOurDevs />
-
+    <AppTeam />
+    <AppCases />
+    <AppReviews />
+    <AppWWU />
+    <AppFAQ />
+    <AppFooter />
   </div>
 </template>
 
@@ -17,7 +22,12 @@ import AppSupport from './components/AppSupport.vue'
 import AppExpert from './components/AppExpert.vue'
 import AppRates from './components/AppRates.vue'
 import AppOurDevs from "@/components/AppOurDevs.vue"
-
+import AppTeam from "@/components/AppTeam.vue"
+import AppCases from "@/components/AppCases.vue"
+import AppReviews from "@/components/AppReviews.vue"
+import AppWWU from "@/components/AppWWU.vue"
+import AppFAQ from "@/components/AppFAQ.vue"
+import AppFooter from "@/components/AppFooter.vue"
 export default {
   components: {
 
@@ -27,6 +37,13 @@ export default {
     AppExpert,
     AppRates,
     AppOurDevs,
+    AppTeam,
+    AppCases,
+    AppReviews,
+    AppWWU,
+    AppFAQ,
+    AppFooter
+
 
   },
 };

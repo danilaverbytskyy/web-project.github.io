@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a831ed5-aaad-4842-a16a-57096555ef1b" name="Changes" comment="Vue Header">
-      <change afterPath="$PROJECT_DIR$/src/components/AppComp.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/AppSupport.vue" afterDir="false" />
+    <list default="true" id="2a831ed5-aaad-4842-a16a-57096555ef1b" name="Changes" comment="Vue Half">
+      <change afterPath="$PROJECT_DIR$/src/components/AppWWU.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.js" afterDir="false" />
     </list>
@@ -24,6 +24,20 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "nikitafilipenko2"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="0250750e-4613-4ba2-83d8-27fcd2060009" />
+        <option name="url" value="https://github.com/danilaverbytskyy/web-project.github.io.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -63,7 +77,7 @@
       <option name="presentableId" value="Default" />
       <updated>1704272466271</updated>
       <workItem from="1704272467717" duration="302000" />
-      <workItem from="1704360889041" duration="3892000" />
+      <workItem from="1704360889041" duration="7166000" />
     </task>
     <task id="LOCAL-00001" summary="Vue Header">
       <option name="closed" value="true" />
@@ -73,7 +87,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704279780159</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Vue Half">
+      <option name="closed" value="true" />
+      <created>1704368726223</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1704368726224</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -92,6 +114,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Vue Header" />
-    <option name="LAST_COMMIT_MESSAGE" value="Vue Header" />
+    <MESSAGE value="Vue Half" />
+    <option name="LAST_COMMIT_MESSAGE" value="Vue Half" />
   </component>
 </project>
