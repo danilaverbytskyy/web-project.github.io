@@ -50,8 +50,13 @@ export default {
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Tilt+Neon&display=swap');
+
+* {
+  font-family: 'Lora', sans-serif;
+}
+
 body {
-  font-family: sans-serif;
   font-weight: 500;
   font-size: 16px;
   padding: 0;
@@ -81,5 +86,4 @@ h3 {
   color: #050c33;
   font-size: 18px;
 }
-
 </style>
