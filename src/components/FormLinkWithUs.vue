@@ -168,7 +168,7 @@ textarea:focus {
 }
 
 .form-check-input {
-  position: absolute;
+
   left: 20px;
   bottom: 20px;
   opacity: 0;
@@ -178,7 +178,7 @@ textarea:focus {
 }
 
 .check {
-  position: absolute;
+
   top: 10px;
   left: 0;
   height: 25px;

@@ -1,5 +1,5 @@
 import {createRouter, createWebHistory} from 'vue-router'
-import AppHome from "@/views/AppHome.vue"
+import App from "@/App.vue"
 import AppPopup from "@/views/AppPopup.vue";
 import store from "@/store.js";
 
@@ -7,7 +7,7 @@ const routes = [
     {
 
         path: '/',
-        component: AppHome,
+        component: App,
         children: [
             {
                 path: '/form',

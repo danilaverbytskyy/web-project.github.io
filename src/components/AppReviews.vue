@@ -185,7 +185,7 @@ import 'slick-carousel/slick/slick.css';
 export default {
   mounted() {
     $(document).ready(function(){
-      $('.reviews-slider').slick({
+      $(".reviews-slider").not('.slick-initialized').slick({
         infinite: true,
         speed: 500,
         prevArrow: $("#reviews-previous"),

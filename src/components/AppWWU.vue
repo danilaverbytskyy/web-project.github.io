@@ -68,7 +68,7 @@ export default {
   mounted() {
     $(document).ready(function(){
       //First slider
-      $("#wwu-slider-1").slick({
+      $("#wwu-slider-1").not('.slick-initialized').slick({
         infinite: true,
         dots: false,
         arrows: false,
@@ -91,7 +91,7 @@ export default {
       });
 
       //Second slider
-      $("#wwu-slider-2").slick({
+      $("#wwu-slider-2").not('.slick-initialized').slick({
         infinite: true,
         dots: false,
         arrows: false,
