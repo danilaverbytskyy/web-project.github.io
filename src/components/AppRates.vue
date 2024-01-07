@@ -38,7 +38,7 @@
               <li>Неиспользованные оплаченные часы не переносятся</li>
               <li>Предоплата от 30 000 рублей в месяц</li>
             </ul>
-            <button class="btn-contact">СВЯЖИТЕСЬ С НАМИ!</button>
+            <button @click="openForm" class="btn-contact">СВЯЖИТЕСЬ С НАМИ!</button>
           </div>
         </div>
       </div>
@@ -52,6 +52,14 @@
 <script>
 export default {
   name:'AppRates',
+  methods: {
+    openForm() {
+      //изменение стейта, при котором показывается форма и проигрывается анимация появления
+      //при закрытии формы через крестик, нужно реализовать изменение этого стейта в обратаную сторону
+      this.$store.dispatch('showForm');
+      this.$router.push({ name: 'form' });
+    },
+  }
 }
 </script>
 <style>

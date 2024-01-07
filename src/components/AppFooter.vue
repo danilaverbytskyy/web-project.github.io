@@ -20,28 +20,7 @@
           </div>
           <div class="col-12 col-md-6">
             <div class="form-block">
-              <form id="footer-form" action="https://formcarry.com/s/adu1AdDRs76" method="POST">
-                <input name="name" id="footer-name" type="text" class="footer-block-input" placeholder="Ваше имя"
-                       required />
-                <input name="number" id="footer-number" type="text" class="footer-block-input" placeholder="Телефон"
-                       required />
-                <input name="email" id="footer-email" type="email" class="footer-block-input" placeholder="E-mail"
-                       required />
-                <textarea name="message" id="footer-message" placeholder="Ваш комментарий"
-                          class="footer-block-input"></textarea>
-                <label for="footer-policy" class="chb-block">
-                  <input name="footer-policy" type="checkbox" class="chb" id="footer-policy" />
-                  <span class="chb-place"></span>
-                  <span>
-                        <span class="footer-checkbox-text">Отправляя заявку, я даю согласие на
-                          <a href="">обработку своих персональных данных</a>.
-                        </span>
-                      </span>
-                </label>
-
-                <input id="sendButton" type="submit" class="footer-contact-button" value="СВЯЖИТЕСЬ С НАМИ"
-                       disabled />
-              </form>
+              <FormLinkWithUs/>
             </div>
           </div>
         </div>
@@ -69,76 +48,10 @@
   </footer>
 </template>
 <script>
-import $ from 'jquery';
+import FormLinkWithUs from "@/components/FormLinkWithUs.vue";
 export default {
-  mounted() {
-    function saveLocalStorage() {
-      localStorage.setItem("footer-name", $("#footer-name").val());
-      localStorage.setItem("footer-number", $("#footer-number").val());
-      localStorage.setItem("footer-email", $("#footer-email").val());
-      localStorage.setItem("footer-message", $("#footer-message").val());
-      localStorage.setItem("footer-policy", $("#footer-policy").prop("checked"));
-    }
-
-    function loadLocalStorage() {
-      if (localStorage.getItem("name") !== null)
-        $("#footer-name").val(localStorage.getItem("footer-name"));
-      if (localStorage.getItem("number") !== null)
-        $("#footer-number").val(localStorage.getItem("footer-number"));
-      if (localStorage.getItem("email") !== null)
-        $("#footer-email").val(localStorage.getItem("footer-email"));
-      if (localStorage.getItem("message") !== null)
-        $("#footer-message").val(localStorage.getItem("footer-message"));
-      if (localStorage.getItem("policy") !== null) {
-        $("#footer-policy").prop("checked", localStorage.getItem("footer-policy") === "true");
-        if ($("#footer-policy").prop("checked"))
-          $("#sendButton").removeAttr("disabled");
-      }
-    }
-    function clear() {
-      localStorage.clear()
-      $("#footer-name").val("");
-      $("#footer-number").val("");
-      $("#footer-email").val("");
-      $("#footer-message").val("");
-      $("#footer-policy").val(false);
-    }
-    $(document).ready(function(){
-
-
-
-        loadLocalStorage();
-        $("#footer-form").submit(function (e) {
-          e.preventDefault();
-          let data = $(this).serialize();
-
-          $.ajax({
-            type: "POST",
-            dataType: "json",
-            url: "https://formcarry.com/s/DuS_CasfnL",
-            data: data,
-            success: function (response) {
-              if (response.status == "success") {
-                alert("form send");
-                clear();
-              } else {
-                alert("error: " + response.message);
-              }
-            }
-          });
-        });
-
-        $("#footer-policy").change(function () {
-          if ((!this.checked))
-            $("#sendButton").attr("disabled", "");
-          else
-            $("#sendButton").removeAttr("disabled");
-        })
-
-        $("#footer-form").change(saveLocalStorage);
-
-    })
-  }
+  name: "AppFooter",
+  components: {FormLinkWithUs},
 }
 </script>
 <style>
