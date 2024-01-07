@@ -6,7 +6,7 @@
       </h2>
       <div class="last-cases-table">
         <a class="case-block" href="">
-          <div class="case-pic" style="background-image: url(./../assets/img/laptop_case_1.jpg)"></div>
+          <div class="case-pic1 case-pic"></div>
           <h3>
             Настройка кэширования данных. Апгрейд сервера. Ускорение работы сайта в 30 раз!
           </h3>
@@ -15,27 +15,29 @@
           </div>
         </a>
         <a class="case-block fullscreen-case" href="">
-          <div class="case-pic" style="background-image: url(./../assets/img/laptop_case_2.jpg)"></div>
+          <div class="case-pic2 case-pic"></div>
           <h3>
             Использование отчетов Ecommerce в Яндекс.Метрике
           </h3>
         </a>
         <a class="case-block fullscreen-case" href="">
-          <div class="case-pic" style="background-image: url(./../assets/img/stat_case.jpg)"></div>
+          <div class="case-pic3 case-pic"></div>
           <h3>
             Повышение конверсии страницы с формой заявки с применением AB-тестирования
           </h3>
           <div class="case-post-date">24.01.2020</div>
         </a>
         <a class="case-block fullscreen-case" href="">
-          <div class="case-pic" style="background-image: url(./../assets/img/speed_case.jpg)"></div>
+          <div class="case-pic4 case-pic"></div>
           <h3>
             Drupal 7: ускорение времени генерации страниц интернет-магазина на 32%
           </h3>
           <div class="case-post-date">23.09.2019</div>
         </a>
         <a class="case-block" href="">
-          <div class="case-pic" style="background-image: url(./../assets/img/monitor_case.png)"></div>
+          <div class="case-pic case-pic5" >
+
+          </div>
           <h3>
             Обмен товарами и заказами интернет-магазинов на Drupal 7 с 1C: Предприятие, МойСклад, Класс365
           </h3>
@@ -93,7 +95,21 @@ export default {
   background-position: center;
   border-radius: 5px;
 }
-
+.case-pic1{
+  background-image: url(./../assets/img/laptop_case_1.jpg);
+}
+.case-pic2{
+  background-image: url(./../assets/img/laptop_case_2.jpg);
+}
+.case-pic3{
+  background-image: url(./../assets/img/stat_case.jpg);
+}
+.case-pic4{
+  background-image: url(./../assets/img/speed_case.jpg);
+}
+.case-pic5{
+  background-image: url(./../assets/img/monitor_case.png);
+}
 .case-post-date {
   opacity: 50%;
   line-height: 1.5;
