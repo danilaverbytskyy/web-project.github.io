@@ -35,9 +35,7 @@ export default {
       let form = document.querySelector("form");
       let formData = new FormData(form);
       let responseBlock = document.getElementById("response-block");
-
       this.$store.dispatch('blockButton');
-
       fetch("https://formcarry.com/s/DuS_CasfnL", {
         method: "POST",
         headers: {
@@ -106,7 +104,7 @@ export default {
         <input @change="saveAgreement" v-model="agreementValue" type="checkbox" id="agreement" name="check" required/>
         <span class="form-check-label">Отправляя заявку, я даю согласие на  <a href="/privacy-policy"
                                                                                                 class="orange">обработку
-          персональных данных</a>.<span class="red">*</span></span>
+          персональных данных</a>.<span class="text-danger">*</span></span>
       </div>
       <button type="submit" class="btn submit-button" :class="{ 'loading': isButtonBlocked }" :disabled="isButtonBlocked">
         <span v-if="isButtonBlocked">&nbsp;</span>
@@ -123,7 +121,7 @@ form {
 }
 
 ::placeholder {
-  color: #ffffff !important;
+  color: white !important;
 }
 
 input {
@@ -134,7 +132,7 @@ input {
   font-weight: 500;
   font-size: 14px;
   padding: 26px 24px;
-  color: #fff !important;
+  color: white !important;
   margin-bottom: 7px;
 }
 
@@ -164,49 +162,6 @@ textarea:focus {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px #f44336;
 }
 
-.form-check-input {
-  position: absolute;
-  left: 20px;
-  bottom: 20px;
-  opacity: 0;
-  width: 25px;
-  height: 25px;
-  z-index: 10;
-}
-
-.check {
-  position: absolute;
-  top: 10px;
-  left: 0;
-  height: 25px;
-  width: 25px;
-  background-color: transparent;
-  border: 2px solid rgba(256, 256, 256, .5);
-  border-radius: 5px;
-}
-
-.check:after {
-  content: "";
-  display: block;
-  width: 21px;
-  height: 21px;
-  background: url(../assets/img/checked-icon.svg) no-repeat center;
-  background-size: contain;
-  transition: opacity .2s, transform .4s;
-  opacity: 0;
-}
-
-.form-check-input:checked ~ .check {
-  background: 0 0;
-  border-color: #f14d34;
-  outline: 0;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px #f44336;
-}
-
-.form-check-input:checked ~ .check:after {
-  opacity: 100%;
-}
-
 .form-check-label {
   margin-left: 5px;
   font-size: 12px;
@@ -217,7 +172,7 @@ textarea:focus {
   background: #f14d34;
   border: 2px solid #f14d34;
   border-radius: 5px;
-  color: #fff !important;
+  color: white !important;
   text-transform: uppercase;
   font-weight: 500;
   font-size: 12px;
@@ -270,21 +225,5 @@ textarea:focus {
 .form a {
   text-decoration: none;
   color: #f14d34;
-}
-
-.red {
-  color: red;
-}
-
-@media screen and (min-width: 768px) {
-  .form-check-input {
-    bottom: 10px;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .check {
-    top: 8px
-  }
 }
 </style>
