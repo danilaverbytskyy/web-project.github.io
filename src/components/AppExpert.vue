@@ -131,5 +131,47 @@ export default {
     margin-bottom: 125px;
   }
 }
+.achievements-place {
+  margin-bottom: 30px;
+}
 
+.achievements-place img {
+  position: absolute;
+  margin-top: -65px;
+}
+
+.achievements-place:first-of-type .achievement-title {
+  font-size: 48px;
+  margin-top: -22px;
+}
+
+.achievements {
+  border-left: 3px solid #f14e3b;
+  padding-left: 15px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  min-height: 80px;
+  height: 100%;
+}
+
+.achievement-title {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1;
+  margin-bottom: 5px;
+}
+
+.achievement-content {
+  font-size: 12px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.achievements a {
+  color: #f14e3b;
+}
+
+.achievement-block {
+  margin-top: 50px;
+}
 </style>
