@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a831ed5-aaad-4842-a16a-57096555ef1b" name="Changes" comment="some changes:)">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="2a831ed5-aaad-4842-a16a-57096555ef1b" name="Changes" comment="some changes2:)">
+      <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,7 +165,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704713807457</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="some changes2:)">
+      <option name="closed" value="true" />
+      <created>1704717610915</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1704717610915</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -205,6 +213,7 @@
     <MESSAGE value="Forming" />
     <MESSAGE value="added telephone pattern" />
     <MESSAGE value="some changes:)" />
-    <option name="LAST_COMMIT_MESSAGE" value="some changes:)" />
+    <MESSAGE value="some changes2:)" />
+    <option name="LAST_COMMIT_MESSAGE" value="some changes2:)" />
   </component>
 </project>
