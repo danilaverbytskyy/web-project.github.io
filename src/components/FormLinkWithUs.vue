@@ -104,14 +104,12 @@ export default {
       <textarea @input="saveComment" v-model="commentValue" class="form-control" id="comment" placeholder="Ваш комментарий"
                 name="comment" required></textarea>
       <div class="form-check my-7 p-2">
-        <label class="form-checkbox-label">
-          <div class="form-check-label"></div>
-          <input @change="saveAgreement" v-model="agreementValue" type="checkbox" class="form-check-input" id="agreement" name="check" required/>
-          <span class="check"></span>
-          <p class="chkbx-label">
-          Отправляя заявку, я даю согласие на <a href="/privacy-policy" class="orange">обработку персональных данных</a>.<span class="red">*</span>
-          </p>
-        </label>
+        <input @change="saveAgreement" v-model="agreementValue" type="checkbox" class="form-check-input" id="agreement" name="check" required/>
+        <span class="check">
+        </span>
+        <label class="form-check-label" for="subscribe">Отправляя заявку, я даю согласие на  <a href="/privacy-policy"
+                                                                                                class="orange">обрабтку
+          персональных данных</a>.<span class="red">*</span></label>
       </div>
       <button type="submit" class="btn submit-button" :class="{ 'loading': isButtonBlocked }" :disabled="isButtonBlocked">
         <span v-if="isButtonBlocked">&nbsp;</span>
@@ -126,13 +124,9 @@ export default {
 form {
   max-width: 100%;
 }
-.chkbx-label{
-  padding-top:40px;
 
-}
 ::placeholder {
   color: #ffffff !important;
-
 }
 
 input {
@@ -145,7 +139,6 @@ input {
   padding: 26px 24px;
   color: #fff !important;
   margin-bottom: 7px;
-
 }
 
 input:focus {
@@ -176,24 +169,20 @@ textarea:focus {
 
 .form-check-input {
   position: absolute;
-
-}
-
-.form-checkbox-label {
-  display: inline-flex;
-  align-items: center;
-  position: relative;
-  cursor: pointer;
-  user-select: none;
-
+  left: 20px;
+  bottom: 20px;
+  opacity: 0;
+  width: 25px;
+  height: 25px;
+  z-index: 10;
 }
 
 .check {
-  display: inline-block;
-  position: relative;
-  height: 20px;
-  width: 20px;
-  margin-right: 8px;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  height: 25px;
+  width: 25px;
   background-color: transparent;
   border: 2px solid rgba(256, 256, 256, .5);
   border-radius: 5px;
@@ -202,28 +191,29 @@ textarea:focus {
 .check:after {
   content: "";
   display: block;
-  width: 16px;
-  height: 16px;
+  width: 21px;
+  height: 21px;
   background: url(../assets/img/checked-icon.svg) no-repeat center;
   background-size: contain;
   transition: opacity .2s, transform .4s;
   opacity: 0;
 }
 
+.form-check-input:checked ~ .check {
+  background: 0 0;
+  border-color: #f14d34;
+  outline: 0;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px #f44336;
+}
+
 .form-check-input:checked ~ .check:after {
-  opacity: 1;
+  opacity: 100%;
 }
 
 .form-check-label {
-
-  font-size: 8px;
-  margin-left: 10px;
-}
-#agreement {
-  transform:scale(0.4);
-  opacity:0.9;
-  cursor:pointer;
-  margin-right: 30px;
+  margin-left: 30px;
+  font-size: 12px;
+  margin-bottom: 10px;
 }
 
 .submit-button {

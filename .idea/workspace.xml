@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a831ed5-aaad-4842-a16a-57096555ef1b" name="Changes" comment="klm">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/FormLinkWithUs.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FormLinkWithUs.vue" afterDir="false" />
-    </list>
+    <list default="true" id="2a831ed5-aaad-4842-a16a-57096555ef1b" name="Changes" comment="Forming" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -141,7 +138,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704703407042</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Forming">
+      <option name="closed" value="true" />
+      <created>1704708837959</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1704708837959</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -178,6 +183,7 @@
     <MESSAGE value="Checkbox" />
     <MESSAGE value="Cross move and rate on 3 btns" />
     <MESSAGE value="klm" />
-    <option name="LAST_COMMIT_MESSAGE" value="klm" />
+    <MESSAGE value="Forming" />
+    <option name="LAST_COMMIT_MESSAGE" value="Forming" />
   </component>
 </project>
