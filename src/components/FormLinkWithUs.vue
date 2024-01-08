@@ -96,7 +96,7 @@ export default {
   <div class="container p-0">
     <form class="form" @submit.prevent="submitForm">
       <input @input="saveName" v-model="nameValue" type="text" class="form-control" id="name" placeholder="Ваше имя"  required/>
-      <input @input="savePhone" v-model="phoneValue" type="tel" class="form-control" id="telephone" placeholder="Телефон" name="phone"
+      <input @input="savePhone" v-model="phoneValue" type="tel" pattern="[0-9+]+" class="form-control" id="telephone" placeholder="Телефон" name="phone"
              required/>
       <input @input="saveEmail" v-model="emailValue" type="email" class="form-control" id="email" placeholder="E-mail" name="email"
              required/>
