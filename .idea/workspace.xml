@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a831ed5-aaad-4842-a16a-57096555ef1b" name="Changes" comment="some changes4:)">
+    <list default="true" id="2a831ed5-aaad-4842-a16a-57096555ef1b" name="Changes" comment="some changes3:)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/FormLinkWithUs.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FormLinkWithUs.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,15 +181,7 @@
       <option name="project" value="LOCAL" />
       <updated>1704717832316</updated>
     </task>
-    <task id="LOCAL-00013" summary="some changes4:)">
-      <option name="closed" value="true" />
-      <created>1704718770557</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1704718770557</updated>
-    </task>
-    <option name="localTasksCounter" value="14" />
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -232,7 +223,6 @@
     <MESSAGE value="some changes:)" />
     <MESSAGE value="some changes2:)" />
     <MESSAGE value="some changes3:)" />
-    <MESSAGE value="some changes4:)" />
-    <option name="LAST_COMMIT_MESSAGE" value="some changes4:)" />
+    <option name="LAST_COMMIT_MESSAGE" value="some changes3:)" />
   </component>
 </project>
