@@ -22,7 +22,7 @@ export default {
   methods: {
     animatePopup() {
       if (this.isFormVisible) {
-        // Анимация появления
+
         const startTimestamp = performance.now();
         const duration = 800;
 
@@ -38,7 +38,7 @@ export default {
 
         requestAnimationFrame(animate);
       } else {
-        // Анимация исчезновения
+
         const startTimestamp = performance.now();
         const duration = 800;
 

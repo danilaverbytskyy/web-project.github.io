@@ -11,7 +11,7 @@ export default {
     }
   },
   computed: {
-    //стейт, который отвечает за блокирование кнопки и проигрывание анимации отправки
+
     isButtonBlocked() {
       return this.$store.getters.isButtonBlocked;
     }
@@ -36,7 +36,7 @@ export default {
       let form = document.querySelector("form");
       let formData = new FormData(form);
       let responseBlock = document.getElementById("response-block");
-      //изменение стейта
+
       this.$store.dispatch('blockButton');
 
       fetch("https://formcarry.com/s/DuS_CasfnL", {
@@ -60,7 +60,7 @@ export default {
                 responseBlock.style.color = "red";
                 responseBlock.style.display = "block";
               }
-              // Возврат в прежнее состояние
+
               this.$store.dispatch('unblockButton');
             }, 1000);
           })
@@ -70,7 +70,7 @@ export default {
               responseBlock.style.color = "red";
               responseBlock.style.display = "block";
               console.log(error);
-              // Возврат в прежнее состояние
+
               this.$store.dispatch('unblockButton');
             }, 1000);
           });
@@ -105,6 +105,7 @@ export default {
                 name="comment" required></textarea>
       <div class="form-check my-7 p-2">
         <label class="form-checkbox-label">
+          <div class="form-check-label"></div>
           <input @change="saveAgreement" v-model="agreementValue" type="checkbox" class="form-check-input" id="agreement" name="check" required/>
           <span class="check"></span>
           <p class="chkbx-label">
@@ -126,10 +127,12 @@ form {
   max-width: 100%;
 }
 .chkbx-label{
-  padding-top:30px;
+  padding-top:40px;
+
 }
 ::placeholder {
   color: #ffffff !important;
+
 }
 
 input {
@@ -142,6 +145,7 @@ input {
   padding: 26px 24px;
   color: #fff !important;
   margin-bottom: 7px;
+
 }
 
 input:focus {
@@ -172,7 +176,7 @@ textarea:focus {
 
 .form-check-input {
   position: absolute;
-  left: -9999px;
+
 }
 
 .form-checkbox-label {
@@ -181,6 +185,7 @@ textarea:focus {
   position: relative;
   cursor: pointer;
   user-select: none;
+
 }
 
 .check {
@@ -210,9 +215,15 @@ textarea:focus {
 }
 
 .form-check-label {
-  margin-left: 30px;
-  font-size: 12px;
-  margin-bottom: 10px;
+
+  font-size: 8px;
+  margin-left: 10px;
+}
+#agreement {
+  transform:scale(0.4);
+  opacity:0.9;
+  cursor:pointer;
+  margin-right: 30px;
 }
 
 .submit-button {
