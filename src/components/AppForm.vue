@@ -125,7 +125,7 @@ export default {
   <div class="container p-0">
     <form class="contact-form" @submit.prevent="submit">
       <input @input="getName" v-model="nameValue" type="text" class="form-control"
-             id="name" name="name" placeholder="Ваше имя" />
+             id="name" placeholder="Ваше имя" />
       <input @input="getPhone" v-model="phoneValue" type="text" class="form-control" id="telephone"
              placeholder="Телефон" name="phone"/>
       <input @input="getEmail" v-model="emailValue" type="text" class="form-control" id="email" placeholder="E-mail"
