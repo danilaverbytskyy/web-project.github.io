@@ -101,7 +101,7 @@ export default {
         this.errors.push('Укажите корректный адрес электронной почты.');
       }
       if (!this.agreementValue) {
-        this.errors.push('Вы должны согласиться с обработкой персональных данных.');
+        this.errors.push('Дайте согласие.');
       }
 
       return this.errors.length === 0;
@@ -140,7 +140,6 @@ export default {
         </span>
       </div>
       <div class="alert alert-danger" v-if="errors.length">
-        <b>Пожалуйста, исправьте следующие ошибки:</b>
         <ul>
           <li v-for="(error, index) in errors" :key="index">{{ error }}</li>
         </ul>
