@@ -6,11 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="2a831ed5-aaad-4842-a16a-57096555ef1b" name="Changes" comment="Deploy, because didnt commited">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AppReviews.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AppReviews.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AppWWU.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AppWWU.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/AppHome.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/FormLinkWithUs.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FormLinkWithUs.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/AppPopup.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/AppPopup.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

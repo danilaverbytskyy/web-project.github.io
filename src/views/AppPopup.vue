@@ -124,7 +124,7 @@ function easeInOutCubic(t) {
 @media screen and (min-width: 1024px) {
   .popup-wrapper {
     width: 50%;
-    left: 25%;
+    left:25%;
   }
 }
 </style>

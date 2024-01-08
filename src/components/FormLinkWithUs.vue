@@ -104,12 +104,13 @@ export default {
       <textarea @input="saveComment" v-model="commentValue" class="form-control" id="comment" placeholder="Ваш комментарий"
                 name="comment" required></textarea>
       <div class="form-check my-7 p-2">
-        <input @change="saveAgreement" v-model="agreementValue" type="checkbox" class="form-check-input" id="agreement" name="check" required/>
-        <span class="check">
-        </span>
-        <label class="form-check-label" for="subscribe">Отправляя заявку, я даю согласие на  <a href="/privacy-policy"
-                                                                                                class="orange">обрабтку
-          персональных данных</a>.<span class="red">*</span></label>
+        <label class="form-checkbox-label">
+          <input @change="saveAgreement" v-model="agreementValue" type="checkbox" class="form-check-input" id="agreement" name="check" required/>
+          <span class="check"></span>
+          <p>
+          Отправляя заявку, я даю согласие на <a href="/privacy-policy" class="orange">обработку персональных данных</a>.<span class="red">*</span>
+          </p>
+        </label>
       </div>
       <button type="submit" class="btn submit-button" :class="{ 'loading': isButtonBlocked }" :disabled="isButtonBlocked">
         <span v-if="isButtonBlocked">&nbsp;</span>
@@ -168,21 +169,24 @@ textarea:focus {
 }
 
 .form-check-input {
+  position: absolute;
+  left: -9999px;
+}
 
-  left: 20px;
-  bottom: 20px;
-  opacity: 0;
-  width: 25px;
-  height: 25px;
-  z-index: 10;
+.form-checkbox-label {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
 }
 
 .check {
-
-  top: 10px;
-  left: 0;
-  height: 25px;
-  width: 25px;
+  display: inline-block;
+  position: relative;
+  height: 20px;
+  width: 20px;
+  margin-right: 8px;
   background-color: transparent;
   border: 2px solid rgba(256, 256, 256, .5);
   border-radius: 5px;
@@ -191,23 +195,16 @@ textarea:focus {
 .check:after {
   content: "";
   display: block;
-  width: 21px;
-  height: 21px;
+  width: 16px;
+  height: 16px;
   background: url(../assets/img/checked-icon.svg) no-repeat center;
   background-size: contain;
   transition: opacity .2s, transform .4s;
   opacity: 0;
 }
 
-.form-check-input:checked ~ .check {
-  background: 0 0;
-  border-color: #f14d34;
-  outline: 0;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px #f44336;
-}
-
 .form-check-input:checked ~ .check:after {
-  opacity: 100%;
+  opacity: 1;
 }
 
 .form-check-label {
