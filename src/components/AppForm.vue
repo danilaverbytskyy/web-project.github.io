@@ -8,6 +8,7 @@ export default {
       emailValue: "",
       commentValue: "",
       agreementValue: false,
+      errors: []
     }
   },
   computed: {
@@ -29,47 +30,52 @@ export default {
       localStorage.setItem("comment", this.commentValue);
     },
     getAgreement() {
-      localStorage.setItem("agreement", this.agreementValue);
+      localStorage.setItem("agreement", this.agreementValue.toString());
+    },
+    checkPhone: function (phone) {
+      let re = /^\+?[0-9]{10,15}$/;
+      return re.test(phone);
     },
     submit() {
-      let form = document.querySelector("form");
-      let request = new FormData(form);
-      let responseBlock = document.getElementById("response-block");
-      this.$store.dispatch('blockButton');
-      fetch("https://formcarry.com/s/DuS_CasfnL", {
-        method: "POST",
-        headers: {
-          "Content-type": "application/json",
-          "Accept": "application/json"
-        },
-        body: JSON.stringify(Object.fromEntries(request.entries()))
-      })
-          .then(response => {
-            setTimeout(() => {
-              if (response.status === 200) {
-                responseBlock.innerHTML = "Данные успешно отправлены";
-                responseBlock.style.color = "white";
-                responseBlock.style.display = "block";
-                localStorage.clear();
-                this.updateForm();
-              }
-              else {
+      if (this.checkForm()) {
+        let form = document.querySelector("form");
+        let request = new FormData(form);
+        let responseBlock = document.getElementById("response-block");
+        this.$store.dispatch('blockButton');
+        fetch("https://formcarry.com/s/DuS_CasfnL", {
+          method: "POST",
+          headers: {
+            "Content-type": "application/json",
+            "Accept": "application/json"
+          },
+          body: JSON.stringify(Object.fromEntries(request.entries()))
+        })
+            .then(response => {
+              setTimeout(() => {
+                if (response.status === 200) {
+                  responseBlock.innerHTML = "Данные успешно отправлены";
+                  responseBlock.style.color = "white";
+                  responseBlock.style.display = "block";
+                  localStorage.clear();
+                  this.updateForm();
+                } else {
+                  responseBlock.innerHTML = "Ошибка при отправке данных";
+                  responseBlock.style.color = "red";
+                  responseBlock.style.display = "block";
+                }
+                this.$store.dispatch('unblockButton');
+              }, 1000);
+            })
+            .catch(error => {
+              setTimeout(() => {
                 responseBlock.innerHTML = "Ошибка при отправке данных";
                 responseBlock.style.color = "red";
                 responseBlock.style.display = "block";
-              }
-              this.$store.dispatch('unblockButton');
-            }, 1000);
-          })
-          .catch(error => {
-            setTimeout(() => {
-              responseBlock.innerHTML = "Ошибка при отправке данных";
-              responseBlock.style.color = "red";
-              responseBlock.style.display = "block";
-              console.log(error);
-              this.$store.dispatch('unblockButton');
-            }, 1000);
-          });
+                console.log(error);
+                this.$store.dispatch('unblockButton');
+              }, 1000);
+            });
+      }
     },
     updateForm() {
       this.nameValue = ""
@@ -77,6 +83,32 @@ export default {
       this.emailValue = "";
       this.commentValue = "";
       this.agreementValue = false;
+    },
+    checkForm: function () {
+      this.errors = [];
+
+      if (!this.nameValue) {
+        this.errors.push('Укажите имя.');
+      }
+      if (!this.phoneValue) {
+        this.errors.push('Укажите телефон.');
+      } else if (!this.checkPhone(this.phoneValue)) {
+        this.errors.push('Укажите корректный номер телефона.');
+      }
+      if (!this.emailValue) {
+        this.errors.push('Укажите электронную почту.');
+      } else if (!this.checkEmail(this.emailValue)) {
+        this.errors.push('Укажите корректный адрес электронной почты.');
+      }
+      if (!this.agreementValue) {
+        this.errors.push('Вы должны согласиться с обработкой персональных данных.');
+      }
+
+      return this.errors.length === 0;
+    },
+    checkEmail: function (email) {
+      let re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+      return re.test(email);
     }
   },
   mounted() {
@@ -84,7 +116,7 @@ export default {
     this.phoneValue = localStorage.getItem("phone");
     this.emailValue = localStorage.getItem("email");
     this.commentValue = localStorage.getItem("comment");
-    this.agreementValue = localStorage.getItem("agreement");
+    this.agreementValue = localStorage.getItem("agreement") === 'true';
   }
 };
 </script>
@@ -93,19 +125,25 @@ export default {
   <div class="container p-0">
     <form class="contact-form" @submit.prevent="submit">
       <input @input="getName" v-model="nameValue" type="text" class="form-control"
-             id="name" placeholder="Ваше имя" required/>
-      <input @input="getPhone" v-model="phoneValue" type="tel" pattern="[0-9+]+" class="form-control" id="telephone"
-             placeholder="Телефон" name="phone" required/>
-      <input @input="getEmail" v-model="emailValue" type="email" class="form-control" id="email" placeholder="E-mail"
-             name="email" required/>
+             id="name" placeholder="Ваше имя" />
+      <input @input="getPhone" v-model="phoneValue" type="text" class="form-control" id="telephone"
+             placeholder="Телефон" name="phone"/>
+      <input @input="getEmail" v-model="emailValue" type="text" class="form-control" id="email" placeholder="E-mail"
+             name="email" />
       <textarea @input="getComment" v-model="commentValue" class="form-control" id="comment"
-                placeholder="Ваш комментарий" name="comment" required>
+                placeholder="Ваш комментарий" name="comment">
       </textarea>
       <div class="form-check my-7 p-2">
-        <input @change="getAgreement" v-model="agreementValue" type="checkbox" id="agreement" name="check" required/>
+        <input @change="getAgreement" v-model="agreementValue" type="checkbox" id="agreement" name="check" />
         <span class="form-check-label">Отправляя заявку, я даю согласие на  <a href="/privacy-policy" class="orange">
           обработку персональных данных</a>.<span class="text-danger">*</span>
         </span>
+      </div>
+      <div class="alert alert-danger" v-if="errors.length">
+        <b>Пожалуйста, исправьте следующие ошибки:</b>
+        <ul>
+          <li v-for="(error, index) in errors" :key="index">{{ error }}</li>
+        </ul>
       </div>
       <button type="submit" class="btn submit-btn" :class="{ 'loading': isButtonBlocked }" :disabled="isButtonBlocked">
         <span v-if="isButtonBlocked">&nbsp;</span>
