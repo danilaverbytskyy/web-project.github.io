@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row">
         <div class="col-12 quick-tasks-title">
-          <h2>
+          <h2 class="text-center">
             Наши профессиональные разработчики <br> выполняют быстро любые задачи
           </h2>
         </div>
@@ -14,7 +14,7 @@
             <div class="competency-pic">
               <img src="../assets/img/competency-20.svg" alt="Task-1"/>
             </div>
-            <div class="our-devs-title">от 1ч</div>
+            <h4 class="our-devs-title text-dark" style="font-size: 33px;">от 1ч</h4>
             <div>Настройка события GA<br>в интернет-магазине</div>
           </div>
         </div>
@@ -23,7 +23,7 @@
             <div class="competency-pic">
               <img src="../assets/img/competency-21.svg" alt="Task-2"/>
             </div>
-            <div class="our-devs-title">от 20ч</div>
+            <h4 class="our-devs-title text-dark" style="font-size: 33px;">от 20ч</h4>
             <div>Разработка мобильной<br>версии сайта</div>
           </div>
         </div>
@@ -32,7 +32,7 @@
             <div class="competency-pic">
               <img src="../assets/img/competency-22.svg" alt="Task-3"/>
             </div>
-            <div class="our-devs-title">от 8ч</div>
+            <h4 class="our-devs-title text-dark" style="font-size: 33px;">от 8ч</h4>
             <div>Интеграция <br> модуля оплаты</div>
           </div>
         </div>

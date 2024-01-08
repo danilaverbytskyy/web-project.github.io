@@ -63,13 +63,13 @@ body {
   width: 100%;
 }
 
-h1, h2, h3 {
-  font-weight: bold;
+h1, h2, h3, h4 {
+  font-weight: bold !important;
 }
 
 h1 {
   color: white;
-  font-size: 24px;
+  font-size: 42px !important;
   line-height: 1.1;
   text-align: center;
   margin-top: 0;
@@ -78,11 +78,11 @@ h1 {
 
 h2 {
   color: #050c33;
-  font-size: 24px;
+  font-size: 42px !important;
 }
 
 h3 {
   color: #050c33;
-  font-size: 18px;
+  font-size: 18px !important;
 }
 </style>

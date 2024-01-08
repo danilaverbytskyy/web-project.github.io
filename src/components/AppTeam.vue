@@ -167,7 +167,7 @@ export default {
 
   .members-function {
     font-size: 16px;
-    margin-top: 0px;
+    margin-top: 0;
   }
 
   .all-team a {

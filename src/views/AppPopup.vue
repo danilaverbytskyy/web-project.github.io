@@ -99,7 +99,7 @@ function easeInOutCubic(t) {
   position: fixed;
   background-color: #1b1e21;
   width: 90%;
-  height: 70%;
+  height: 80%;
   top: 15%;
   left: 5%;
   padding: 20px;
