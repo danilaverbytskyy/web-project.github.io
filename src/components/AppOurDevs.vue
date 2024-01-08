@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row">
         <div class="col-12 quick-tasks-title">
-          <h2 class="text-center">
+          <h2 class="our-devs-main">
             Наши профессиональные разработчики <br> выполняют быстро любые задачи
           </h2>
         </div>
@@ -63,5 +63,11 @@ export default {
   font-weight: 500;
   font-size: 16px;
   color: #404c65;
+}
+
+@media screen and (min-width: 768px) {
+  .our-devs-main {
+    text-align: center;
+  }
 }
 </style>
