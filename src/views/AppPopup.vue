@@ -99,7 +99,7 @@ function easeInOutCubic(t) {
   position: fixed;
   background-color: #1b1e21;
   width: 90%;
-  height: 60%;
+  height: 70%;
   top: 15%;
   left: 5%;
   padding: 20px;
@@ -114,11 +114,11 @@ function easeInOutCubic(t) {
 
 .close-button {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 1%;
+  right: 1%;
   cursor: pointer;
   font-size: 20px;
-  padding: 1px 9px;
+
 }
 
 @media screen and (min-width: 1024px) {

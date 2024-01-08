@@ -12,7 +12,7 @@
               <li>Неиспользованные оплаченные часы переносятся на следующий месяц</li>
               <li>Предоплата от 6 000 рублей в месяц</li>
             </ul>
-            <button class="btn-contact">СВЯЖИТЕСЬ С НАМИ!</button>
+            <button class="btn-contact" @click="openForm">СВЯЖИТЕСЬ С НАМИ!</button>
           </div>
         </div>
         <div class="col-12 col-md-4 order-3 rate-column">
@@ -25,7 +25,7 @@
               <li>Неиспользованные оплаченные часы не переносятся</li>
               <li>Предоплата от 270 000 рублей в месяц</li>
             </ul>
-            <button class="btn-contact">СВЯЖИТЕСЬ С НАМИ!</button>
+            <button @click="openForm" class="btn-contact">СВЯЖИТЕСЬ С НАМИ!</button>
           </div>
         </div>
         <div class="col-12 col-md-4 order-2 rate-column main-rate">
