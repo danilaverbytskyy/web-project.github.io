@@ -107,7 +107,7 @@ export default {
         <label class="form-checkbox-label">
           <input @change="saveAgreement" v-model="agreementValue" type="checkbox" class="form-check-input" id="agreement" name="check" required/>
           <span class="check"></span>
-          <p>
+          <p class="chkbx-label">
           Отправляя заявку, я даю согласие на <a href="/privacy-policy" class="orange">обработку персональных данных</a>.<span class="red">*</span>
           </p>
         </label>
@@ -125,7 +125,9 @@ export default {
 form {
   max-width: 100%;
 }
-
+.chkbx-label{
+  padding-top:30px;
+}
 ::placeholder {
   color: #ffffff !important;
 }
