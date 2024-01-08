@@ -16,22 +16,22 @@ export default {
     }
   },
   methods: {
-    saveName() {
+    getName() {
       localStorage.setItem("name", this.nameValue);
     },
-    savePhone() {
+    getPhone() {
       localStorage.setItem("phone", this.phoneValue);
     },
-    saveEmail() {
+    getEmail() {
       localStorage.setItem("email", this.emailValue);
     },
-    saveComment() {
+    getComment() {
       localStorage.setItem("comment", this.commentValue);
     },
-    saveAgreement() {
+    getAgreement() {
       localStorage.setItem("agreement", this.agreementValue);
     },
-    submitForm() {
+    submit() {
       let form = document.querySelector("form");
       let request = new FormData(form);
       let responseBlock = document.getElementById("response-block");
@@ -52,12 +52,12 @@ export default {
                 responseBlock.style.display = "block";
                 localStorage.clear();
                 this.updateForm();
-              } else {
+              }
+              else {
                 responseBlock.innerHTML = "Ошибка при отправке данных";
                 responseBlock.style.color = "red";
                 responseBlock.style.display = "block";
               }
-
               this.$store.dispatch('unblockButton');
             }, 1000);
           })
@@ -67,7 +67,6 @@ export default {
               responseBlock.style.color = "red";
               responseBlock.style.display = "block";
               console.log(error);
-
               this.$store.dispatch('unblockButton');
             }, 1000);
           });
@@ -92,18 +91,18 @@ export default {
 
 <template>
   <div class="container p-0">
-    <form class="contact-form" @submit.prevent="submitForm">
-      <input @input="saveName" v-model="nameValue" type="text" class="form-control"
+    <form class="contact-form" @submit.prevent="submit">
+      <input @input="getName" v-model="nameValue" type="text" class="form-control"
              id="name" placeholder="Ваше имя" required/>
-      <input @input="savePhone" v-model="phoneValue" type="tel" pattern="[0-9+]+" class="form-control" id="telephone"
+      <input @input="getPhone" v-model="phoneValue" type="tel" pattern="[0-9+]+" class="form-control" id="telephone"
              placeholder="Телефон" name="phone" required/>
-      <input @input="saveEmail" v-model="emailValue" type="email" class="form-control" id="email" placeholder="E-mail"
+      <input @input="getEmail" v-model="emailValue" type="email" class="form-control" id="email" placeholder="E-mail"
              name="email" required/>
-      <textarea @input="saveComment" v-model="commentValue" class="form-control" id="comment"
+      <textarea @input="getComment" v-model="commentValue" class="form-control" id="comment"
                 placeholder="Ваш комментарий" name="comment" required>
       </textarea>
       <div class="form-check my-7 p-2">
-        <input @change="saveAgreement" v-model="agreementValue" type="checkbox" id="agreement" name="check" required/>
+        <input @change="getAgreement" v-model="agreementValue" type="checkbox" id="agreement" name="check" required/>
         <span class="form-check-label">Отправляя заявку, я даю согласие на  <a href="/privacy-policy" class="orange">
           обработку персональных данных</a>.<span class="text-danger">*</span>
         </span>
@@ -118,11 +117,14 @@ export default {
 </template>
 
 <style scoped>
+input, textarea, .submit-btn, ::placeholder {
+  color: white !important;
+}
+
 input {
   background: 0 0;
   border: 1px solid rgba(256, 256, 256, .3);
   border-radius: 5px;
-  color: white !important;
   margin-bottom: 7px;
   line-height: 1.2;
   font-weight: 500;
@@ -134,11 +136,10 @@ input:focus {
   background: 0 0;
   border-color: rgb(216, 38, 38);
   outline: 0;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px #f44336;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px #f44536;
 }
 
 textarea {
-  color: white !important;
   line-height: 1.2;
   font-weight: 500;
   font-size: 14px;
@@ -165,7 +166,6 @@ textarea:focus {
   background: rgb(216, 38, 38);
   border: 2px solid rgb(216, 38, 38);
   border-radius: 4px;
-  color: white !important;
   text-transform: uppercase;
   font-weight: 500;
   font-size: 11px;
@@ -226,9 +226,5 @@ textarea:focus {
 
 form {
   max-width: 100%;
-}
-
-::placeholder {
-  color: white !important;
 }
 </style>
