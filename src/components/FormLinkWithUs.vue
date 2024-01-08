@@ -104,12 +104,10 @@ export default {
       <textarea @input="saveComment" v-model="commentValue" class="form-control" id="comment" placeholder="Ваш комментарий"
                 name="comment" required></textarea>
       <div class="form-check my-7 p-2">
-        <input @change="saveAgreement" v-model="agreementValue" type="checkbox" class="form-check-input" id="agreement" name="check" required/>
-        <span class="check">
-        </span>
-        <label class="form-check-label" for="subscribe">Отправляя заявку, я даю согласие на  <a href="/privacy-policy"
-                                                                                                class="orange">обрабтку
-          персональных данных</a>.<span class="red">*</span></label>
+        <input @change="saveAgreement" v-model="agreementValue" type="checkbox" id="agreement" name="check" required/>
+        <span class="form-check-label">Отправляя заявку, я даю согласие на  <a href="/privacy-policy"
+                                                                                                class="orange">обработку
+          персональных данных</a>.<span class="red">*</span></span>
       </div>
       <button type="submit" class="btn submit-button" :class="{ 'loading': isButtonBlocked }" :disabled="isButtonBlocked">
         <span v-if="isButtonBlocked">&nbsp;</span>
@@ -211,7 +209,7 @@ textarea:focus {
 }
 
 .form-check-label {
-  margin-left: 30px;
+  margin-left: 5px;
   font-size: 12px;
   margin-bottom: 10px;
 }
