@@ -5,7 +5,6 @@ import store from "@/store.js";
 
 const routes = [
     {
-
         path: '/',
         component: App,
         children: [
@@ -20,7 +19,6 @@ const routes = [
 
 const router = createRouter({
     history: createWebHistory(process.env.BASE_UR),
-
     routes,
 })
 

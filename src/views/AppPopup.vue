@@ -1,5 +1,5 @@
 <script>
-import FormLinkWithUs from "@/components/FormLinkWithUs.vue";
+import FormLinkWithUs from "@/components/AppForm.vue";
 
 export default {
   components: {FormLinkWithUs},

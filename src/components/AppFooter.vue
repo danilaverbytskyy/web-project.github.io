@@ -48,10 +48,10 @@
   </footer>
 </template>
 <script>
-import FormLinkWithUs from "@/components/FormLinkWithUs.vue";
+import AppForm from "@/components/AppForm.vue";
 export default {
   name: "AppFooter",
-  components: {FormLinkWithUs},
+  components: {FormLinkWithUs: AppForm},
 }
 </script>
 <style>
