@@ -11,7 +11,6 @@ export default {
     }
   },
   computed: {
-
     isButtonBlocked() {
       return this.$store.getters.isButtonBlocked;
     }

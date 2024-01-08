@@ -64,5 +64,4 @@ export default {
   font-size: 16px;
   color: #404c65;
 }
-
 </style>

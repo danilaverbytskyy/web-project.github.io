@@ -30,15 +30,12 @@ import AppWWU from "@/components/AppWWU.vue"
 import AppFAQ from "@/components/AppFAQ.vue"
 import AppFooter from "@/components/AppFooter.vue"
 
-
 export default {
   components: {
-
     AppNav,
     AppComp,
     AppSupport,
     AppExpert,
-
     AppRates,
     AppOurDevs,
     AppTeam,
@@ -47,9 +44,6 @@ export default {
     AppWWU,
     AppFAQ,
     AppFooter,
-
-
-
   },
 };
 </script>
