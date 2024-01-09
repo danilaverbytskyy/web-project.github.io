@@ -24,9 +24,9 @@
           <div class="competency-pic">
             <img src="../assets/img/competency-2.svg"/>
           </div>
-          <span class="competency-text">
+          <div class="competency-text">
             Разработка <br> и оптимизация <br> модулей сайта
-          </span>
+          </div>
         </div>
         <div class="col-6 col-md-3 competency-block">
           <div class="competency-pic">
@@ -40,9 +40,9 @@
           <div class="competency-pic">
             <img src="../assets/img/competency-4.svg"/>
           </div>
-          <span class="competency-text">
+          <div class="competency-text">
             Любые доработки <br> функционала <br> и дизайна
-          </span>
+          </div>
         </div>
         <div class="col-6 col-md-3 competency-block">
           <div class="competency-pic">
@@ -56,9 +56,9 @@
           <div class="competency-pic">
             <img src="../assets/img/competency-6.svg"/>
           </div>
-          <span class="competency-text">
+          <div class="competency-text">
             Миграция, импорт <br> контента и апгрейд <br> Drupal
-          </span>
+          </div>
         </div>
         <div class="col-6 col-md-3 competency-block">
           <div class="competency-pic">
@@ -72,9 +72,9 @@
           <div class="competency-pic">
             <img src="../assets/img/competency-8.svg"/>
           </div>
-          <span class="competency-text">
+          <div class="competency-text">
             Веб-маркетинг, <br> консультации <br> и работы по SEO
-          </span>
+          </div>
         </div>
       </div>
     </div>
